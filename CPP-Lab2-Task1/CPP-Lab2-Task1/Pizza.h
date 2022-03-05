@@ -11,10 +11,7 @@ private:
 	const static int STSIZE;
 	const static double STPRICE;
 public:
-	Pizza(string, int, double);
-	Pizza(string, int);
-	Pizza(string);
-	Pizza();
+	Pizza(const string = STTOP, const int = STSIZE, const double = STPRICE);
 	void setValues();
 	void displayValues();
 };

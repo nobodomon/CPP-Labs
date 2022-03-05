@@ -3,22 +3,7 @@
 
 #include "Pizza.h"
 
-Pizza::Pizza() :Pizza(STTOP, STSIZE, STPRICE) {};
-
-Pizza::Pizza(string topping) {
-	this->topping = topping;
-	this->diameter = STSIZE;
-	this->price = STPRICE;
-};
-Pizza::Pizza(string topping, int diameter) {
-	this->topping = topping;
-	this->diameter = diameter;
-	this->price = STPRICE;
-};
-Pizza::Pizza(string topping, int diameter, double price) {
-	this->topping = topping;
-	this->diameter = diameter;
-	this->price = price;
+Pizza::Pizza(string topping, int diameter, double price): topping(topping),diameter(diameter),price(price){
 };
 
 void Pizza::displayValues() {
